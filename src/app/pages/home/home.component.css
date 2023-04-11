@@ -1,0 +1,15 @@
+.container-cards{
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.other-articles{
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+}
+
+.main-article{
+  width: 50%;
+}
