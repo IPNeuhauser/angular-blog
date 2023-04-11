@@ -6,5 +6,10 @@ import { Component } from '@angular/core';
   styleUrls: ['./small-card.component.css']
 })
 export class SmallCardComponent {
+  linkImg: string ="../../../assets/imagens/pexels-phil-kallahar-983200.jpg";
+  tituloCard: string ="shuahsuahsu";
 
+  constructor(){
+
+  }
 }

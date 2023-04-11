@@ -3,12 +3,11 @@
   flex-direction: row;
   width: 100%;
   min-height: 200px;
-  border: 1px solid white;
   padding: 10px;
 }
 
 .container-smallCard picture{
-  width: 100%;
+  width: 30%;
 }
 
 .container-smallCard img{
@@ -27,4 +26,8 @@
   font-size: 1.1rem;
   margin: 0px 15px;
   text-align: justify;
+}
+
+hr{
+  width: 98%;
 }
