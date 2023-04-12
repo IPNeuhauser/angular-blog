@@ -12,6 +12,7 @@
 
 .container-menuBar > ul > li{
   margin: 0px 10px;
+  font-size: 0.725rem;
   columns: white;
 }
 

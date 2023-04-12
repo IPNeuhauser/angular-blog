@@ -1,0 +1,54 @@
+*{
+  color: white;
+}
+
+.container_content{
+  border: 1px solid white;
+  width: 100%;
+  height: 100%;
+}
+
+.container_img {
+  padding: 10px 10px 0px 10px;
+}
+
+.container_img > img{
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border: 5px solid rgba(117, 114, 114, 0.801);
+  border-radius: 5px;
+}
+
+picture > caption{
+  display: inline;
+  color: gray;
+  font-size: 0.9rem;
+  margin-left: 10px;
+}
+
+.content_title{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.content_title > h1{
+  text-align: center;
+  font-size: 3rem;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.content_description{
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+}
+
+.content_description > p{
+  color: rgb(165, 164, 164);
+  margin-left: 15px;
+  text-align: justify;
+  text-indent: 20px;
+}
+

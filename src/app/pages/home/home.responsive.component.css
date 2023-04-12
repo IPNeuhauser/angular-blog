@@ -1,0 +1,15 @@
+@media screen and (min-width: 768px){
+  .container-cards{
+    flex-direction: row;
+    max-width: 850px;
+    margin: auto;
+  }
+
+  .main-article{
+    width: 50%;
+  }
+
+  .other-articles{
+    width: 50%;
+  }
+}

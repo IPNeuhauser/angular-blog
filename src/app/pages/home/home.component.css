@@ -1,6 +1,6 @@
 .container-cards{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   width: 100%;
   justify-content: center;
 }
@@ -8,9 +8,5 @@
 .other-articles{
   display: flex;
   flex-direction: column;
-  width: 50%;
 }
 
-.main-article{
-  width: 50%;
-}
