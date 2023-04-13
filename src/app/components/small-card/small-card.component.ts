@@ -9,6 +9,5 @@ export class SmallCardComponent {
   @Input() photoCover: string = "";
   @Input() photoAlt: string = "";
   @Input() titleCard: string = "";
-  @Input() linkCard: string = "#";
-
+  @Input() id: string = "0";
 }

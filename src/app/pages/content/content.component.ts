@@ -1,12 +1,33 @@
-import { Component } from '@angular/core';
+import { Component, OnInit } from '@angular/core';
+import { ActivatedRoute } from '@angular/router';
+import { dataFake } from '../../data/dataFake'
 
 @Component({
   selector: 'app-content',
   templateUrl: './content.component.html',
   styleUrls: ['./content.component.css']
 })
-export class ContentComponent {
-  photoCover:string = 'https://hbomax-images.warnermediacdn.com/images/GXdRsewUPO5uAuwEAABEI/tileburnedin?size=1280x720&partner=hbomaxcom&v=26a5badd79c2cca91aa0c86d604bfd3e&host=art-gallery.api.hbo.com&language=pt-br&w=1280';
-  contentTitle:string = 'Minha Noticia';
-  contentDescription:string = 'Lorem, ipsum dolor sit amet consectetur adipisicing elit. Molestiae, accusantium. Sit vero quod in soluta quia? Ullam saepe illo reprehenderit voluptas distinctio aliquam? Dolorum aliquid nihil, eligendi culpa iusto sint! Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis necessitatibus consectetur corporis maxime provident, maiores vitae esse aperiam sapiente itaque fugit repellat, illum nesciunt dicta, enim dolor autem tempora alias?'
+export class ContentComponent implements OnInit{
+  photoCover:string = '';
+  contentTitle:string = '';
+  contentDescription:string = '';
+  photoAlt:string | undefined = '';
+  private id:string | null = "0";
+
+  constructor( private route:ActivatedRoute){}
+
+  ngOnInit():void{
+    this.route.paramMap.subscribe( value =>
+      this.id = value.get("id")
+    );
+    this.setValuesToComponent(this.id);
+  }
+
+  setValuesToComponent(id:string | null){
+    const result = dataFake.filter(article => article.id == id)[0]
+    this.photoCover = result.photo;
+    this.contentTitle = result.title;
+    this.contentDescription = result.description;
+    this.photoAlt = result.photoAlt;
+  }
 }

@@ -11,5 +11,5 @@ export class BigCardComponent {
   @Input() photoCaption: string = "";
   @Input() cardTitle: string = "";
   @Input() cardDescription: string = "";
-  @Input() linkReport: string = "#"
+  @Input() id:string = "0";
 }

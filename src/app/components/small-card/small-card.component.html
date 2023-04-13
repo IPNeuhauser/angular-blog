@@ -5,7 +5,7 @@
         <img src={{photoCover}} alt={{photoAlt}}>
     </picture>
     <div class="container-p">
-      <p><a href={{linkCard}}>{{titleCard}}</a></p>
+      <p><a [routerLink]="['content', id]">{{titleCard}}</a></p>
     </div>
   </article>
 </div>
